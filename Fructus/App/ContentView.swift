@@ -38,8 +38,9 @@ struct ContentView: View {
                     Button {
                         isOnboarding = true
                     } label: {
-                        Image(systemName: "arrowshape.turn.up.backward.circle.fill")
+                        Image(systemName: "arrowshape.turn.up.backward.fill")
                     }
+
 
                 }
             }
