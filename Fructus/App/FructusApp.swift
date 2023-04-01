@@ -13,12 +13,16 @@ struct FructusApp: App {
     
     var body: some Scene {
         WindowGroup {
-            if isOnboarding {
-                OnboardingView()
+            ZStack {
+                if isOnboarding {
+                    OnboardingView()
+                }
+                else {
+                    ContentView()
+                }
             }
-            else {
-                ContentView()
-            }
+            .animation(.easeOut(duration: 0.5), value: !isOnboarding)
+            
         }
     }
 }
